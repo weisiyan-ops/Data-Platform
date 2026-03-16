@@ -1,0 +1,66 @@
+# Shared defaults across all cancer types.
+cancer_type: unknown
+display_name: ""
+
+staging:
+  system: AJCC_8th
+  aliases: {}
+
+histology_keywords: []
+primary_site_keywords: []
+
+treatment_keywords:
+  chemotherapy:
+    - chemotherapy
+    - chemo
+  immunotherapy:
+    - immunotherapy
+    - checkpoint inhibitor
+    - anti-PD
+    - anti-CTLA
+  radiation:
+    - radiation
+    - radiotherapy
+    - RT
+    - SBRT
+    - IMRT
+  surgery:
+    - surgery
+    - resection
+    - excision
+
+biomarkers: []
+
+lab_analytes:
+  - WBC
+  - RBC
+  - hemoglobin
+  - hematocrit
+  - platelets
+  - ANC
+  - ALC
+  - albumin
+  - creatinine
+  - BUN
+  - AST
+  - ALT
+  - bilirubin
+  - LDH
+  - alkaline_phosphatase
+
+progression_keywords:
+  - progression
+  - progressed
+  - recurrence
+  - recurred
+  - new lesion
+  - enlarging
+  - worsening
+
+response_keywords:
+  - complete response
+  - partial response
+  - stable disease
+  - responding
+  - decreased
+  - resolved

@@ -1,0 +1,23 @@
+# Default study-level configuration template.
+# Copy and customize per study.
+
+study_name: ""
+cancer_type: lung
+institution: ""
+pi_name: ""
+irb_number: ""
+
+index_date: start_of_treatment
+
+inclusion_criteria: {}
+exclusion_criteria: {}
+
+endpoints:
+  - overall_survival
+  - progression_free_survival
+  - local_control
+
+export:
+  format: csv
+  include_provenance: false
+  date_format: "%Y-%m-%d"

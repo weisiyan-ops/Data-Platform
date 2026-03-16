@@ -1,0 +1,54 @@
+# Lung cancer specific configuration
+cancer_type: lung
+display_name: Lung Cancer
+
+histology_keywords:
+  - adenocarcinoma
+  - squamous cell carcinoma
+  - large cell carcinoma
+  - small cell lung cancer
+  - SCLC
+  - NSCLC
+  - non-small cell
+  - carcinoid
+
+primary_site_keywords:
+  - lung
+  - bronchus
+  - pulmonary
+  - hilar
+  - mediastinal
+
+staging:
+  system: AJCC_8th
+  aliases:
+    "3A": "IIIA"
+    "3B": "IIIB"
+    "4": "IV"
+
+treatment_keywords:
+  targeted_therapy:
+    - erlotinib
+    - gefitinib
+    - afatinib
+    - osimertinib
+    - crizotinib
+    - alectinib
+    - lorlatinib
+    - sotorasib
+    - adagrasib
+    - EGFR TKI
+    - ALK inhibitor
+    - KRAS G12C
+
+biomarkers:
+  - EGFR
+  - ALK
+  - ROS1
+  - KRAS
+  - BRAF
+  - PD-L1
+  - MET
+  - RET
+  - NTRK
+  - HER2

@@ -1,0 +1,14 @@
+services:
+  api:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./projects:/app/projects
+      - ./configs:/app/configs
+    environment:
+      - ONCO_STORAGE__BACKEND=duckdb
+      - ONCO_STORAGE__DATABASE_PATH=data/onco.duckdb
+      - ONCO_LOGGING__LEVEL=INFO

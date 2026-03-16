@@ -1,0 +1,31 @@
+# Endpoint derivation rules for PFS, OS, and local control.
+
+overall_survival:
+  event: death
+  censor_at: last_contact_date
+  requires_index_date: true
+
+progression_free_survival:
+  events:
+    - progression
+    - death
+  censor_at: last_contact_date
+  requires_index_date: true
+  notes: "Use earliest of progression or death"
+
+local_control:
+  events:
+    - local_progression
+  censor_at: last_contact_date
+  requires_index_date: true
+
+index_date_options:
+  - start_of_treatment
+  - diagnosis_date
+  - start_of_radiation
+  - surgery_date
+  - custom
+
+censoring:
+  max_follow_up_months: null  # null = no cap
+  lost_to_followup_gap_days: 180  # days without contact → censor

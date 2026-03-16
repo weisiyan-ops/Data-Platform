@@ -1,0 +1,53 @@
+# Breast cancer specific configuration
+cancer_type: breast
+display_name: Breast Cancer
+
+histology_keywords:
+  - invasive ductal carcinoma
+  - IDC
+  - invasive lobular carcinoma
+  - ILC
+  - DCIS
+  - ductal carcinoma in situ
+  - triple negative
+  - inflammatory breast cancer
+
+primary_site_keywords:
+  - breast
+  - mammary
+  - axillary
+
+staging:
+  system: AJCC_8th
+  aliases: {}
+
+treatment_keywords:
+  endocrine_therapy:
+    - tamoxifen
+    - letrozole
+    - anastrozole
+    - exemestane
+    - fulvestrant
+    - aromatase inhibitor
+  targeted_therapy:
+    - trastuzumab
+    - pertuzumab
+    - T-DXd
+    - T-DM1
+    - lapatinib
+    - tucatinib
+    - CDK4/6 inhibitor
+    - palbociclib
+    - ribociclib
+    - abemaciclib
+
+biomarkers:
+  - ER
+  - PR
+  - HER2
+  - Ki-67
+  - BRCA1
+  - BRCA2
+  - PD-L1
+  - PIK3CA
+  - Oncotype DX

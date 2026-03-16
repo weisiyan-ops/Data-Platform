@@ -1,0 +1,19 @@
+app_name: onco-extractor
+version: "0.1.0"
+debug: false
+
+storage:
+  backend: duckdb
+  database_path: data/onco.duckdb
+
+logging:
+  level: INFO
+  format: json
+
+api:
+  host: "0.0.0.0"
+  port: 8000
+  reload: false
+
+projects_dir: projects
+configs_dir: configs
